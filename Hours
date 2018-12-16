@@ -1,0 +1,11 @@
+hour = int(input("Enter hour: "))
+minute = int(input("Enter minute: "))
+hours_elapsed = int(input("Enter hour elapsed: "))
+minute_elapsed = int(input("Enter minute elapsed: "))
+
+current_hour = hour + hours_elapsed
+current_minute = (minute + minute_elapsed)
+current_hour += (current_minute // 60)
+current_minute = (minute + minute_elapsed) % 60
+
+print("Current time: ", current_hour, ":", current_minute)
