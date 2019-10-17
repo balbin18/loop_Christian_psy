@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter row: ");
+		int totalrow = input.nextInt();
+		System.out.println("Enter column: ");
+		int totalcolumn = input.nextInt();		
+
+		    for (int row = 1 ; row <= totalrow ; row++)
+		    {
+		        for(int col = 1; col <= totalcolumn; col++)
+		        {
+		           System.out.printf("%5d",row * col);
+		        }
+		        System.out.println("");
+		    }
+	}
+}
