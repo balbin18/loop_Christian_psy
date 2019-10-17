@@ -1,0 +1,15 @@
+public class Main
+{
+	public static void main(String[] args) {
+		final int totalrow = 11;
+		final int totalcolumn=totalrow;
+		    for (int row = 1 ; row < totalrow ; row++)
+		    {
+		        for(int col = 1; col < totalcolumn; col++)
+		        {
+		           System.out.printf("%5d",row * col);
+		        }
+		        System.out.println("");
+		    }
+	}
+}
